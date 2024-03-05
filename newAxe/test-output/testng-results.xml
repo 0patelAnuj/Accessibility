@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-04T13:18:14 IST" name="Default suite" finished-at="2024-03-04T13:18:25 IST" duration-ms="10595">
+    <groups>
+    </groups>
+    <test started-at="2024-03-04T13:18:14 IST" name="Default test" finished-at="2024-03-04T13:18:25 IST" duration-ms="10595">
+      <class name="AxePackage.Allytest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:AxePackage.Allytest@7cc0cdad]" started-at="2024-03-04T13:18:14 IST" name="setup" finished-at="2024-03-04T13:18:24 IST" duration-ms="9935" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="AmazonAllyTest()[pri:0, instance:AxePackage.Allytest@7cc0cdad]" started-at="2024-03-04T13:18:24 IST" name="AmazonAllyTest" finished-at="2024-03-04T13:18:24 IST" duration-ms="327" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Found 5 accessibility violations:
+1) Elements must have sufficient color contrast: https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI
+  a) [".a-color-secondary"]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.54 (foreground color: #888888, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1
+
+
+2) Images must have alternate text: https://dequeuniversity.com/rules/axe/4.2/image-alt?application=axeAPI
+  a) [".a-text-center.a-row > img"]
+    Fix any of the following:
+      Element does not have an alt attribute
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element has no title attribute
+      Element's default semantics were not overridden with role="none" or role="presentation"
+
+
+  b) [".a-color-secondary > img"]
+    Fix any of the following:
+      Element does not have an alt attribute
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element has no title attribute
+      Element's default semantics were not overridden with role="none" or role="presentation"
+
+
+3) Document should have one main landmark: https://dequeuniversity.com/rules/axe/4.2/landmark-one-main?application=axeAPI
+  a) ["html"]
+    Fix all of the following:
+      Document does not have a main landmark
+
+
+4) Page should contain a level-one heading: https://dequeuniversity.com/rules/axe/4.2/page-has-heading-one?application=axeAPI
+  a) ["html"]
+    Fix all of the following:
+      Page must have a level-one heading
+
+
+5) All page content should be contained by landmarks: https://dequeuniversity.com/rules/axe/4.2/region?application=axeAPI
+  a) [".a-alert"]
+    Fix any of the following:
+      Some page content is not contained by landmarks
+
+
+  b) [".a-spacing-large"]
+    Fix any of the following:
+      Some page content is not contained by landmarks
+
+
+  c) [".a-spacing-extra-large"]
+    Fix any of the following:
+      Some page content is not contained by landmarks
+
+
+  d) [".a-spacing-small"]
+    Fix any of the following:
+      Some page content is not contained by landmarks
+
+
+  e) [".a-color-secondary"]
+    Fix any of the following:
+      Some page content is not contained by landmarks
+
+ expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Found 5 accessibility violations:
+1) Elements must have sufficient color contrast: https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI
+  a) [".a-color-secondary"]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.54 (foreground color: #888888, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1
+
+
+2) Images must have alternate text: https://dequeuniversity.com/rules/axe/4.2/image-alt?application=axeAPI
+  a) [".a-text-center.a-row > img"]
+    Fix any of the following:
+      Element does not have an alt attribute
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element has no title attribute
+      Element's default semantics were not overridden with role="none" or role="presentation"
+
+
+  b) [".a-color-secondary > img"]
+    Fix any of the following:
+      Element does not have an alt attribute
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element has no title attribute
+      Element's default semantics were not overridden with role="none" or role="presentation"
+
+
+3) Document should have one main landmark: https://dequeuniversity.com/rules/axe/4.2/landmark-one-main?application=axeAPI
+  a) ["html"]
+    Fix all of the following:
+      Document does not have a main landmark
+
+
+4) Page should contain a level-one heading: https://dequeuniversity.com/rules/axe/4.2/page-has-heading-one?application=axeAPI
+  a) ["html"]
+    Fix all of the following:
+      Page must have a level-one heading
+
+
+5) All page content should be contained by landmarks: https://dequeuniversity.com/rules/axe/4.2/region?application=axeAPI
+  a) [".a-alert"]
+    Fix any of the following:
+      Some page content is not contained by landmarks
+
+
+  b) [".a-spacing-large"]
+    Fix any of the following:
+      Some page content is not contained by landmarks
+
+
+  c) [".a-spacing-extra-large"]
+    Fix any of the following:
+      Some page content is not contained by landmarks
+
+
+  d) [".a-spacing-small"]
+    Fix any of the following:
+      Some page content is not contained by landmarks
+
+
+  e) [".a-color-secondary"]
+    Fix any of the following:
+      Some page content is not contained by landmarks
+
+ expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at AxePackage.Allytest.AmazonAllyTest(Allytest.java:44)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AmazonAllyTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AxePackage.Allytest@7cc0cdad]" started-at="2024-03-04T13:18:24 IST" name="tearDown" finished-at="2024-03-04T13:18:25 IST" duration-ms="279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- AxePackage.Allytest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
